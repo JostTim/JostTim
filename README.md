@@ -1,1 +1,1 @@
-Trying to learn as much electronics, computer science and mechatronics as possible to **automate everything** !
+Trying to learn as much mechatronics and computer science as possible to **automate everything** !
