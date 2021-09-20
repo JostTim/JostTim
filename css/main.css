@@ -1,0 +1,362 @@
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:400,700|Fredoka+One|Nunito:400,800,900|Poiret+One|Quicksand:400,500,700';
+
+@keyframes WavyBackground {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+
+
+html,
+body {
+  font-family: 'comfortaa', sans-serif;
+  text-align: center;
+  /*background: -moz-linear-gradient(top,  #9a08dd,  #fff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9a08dd), to(#3a9eff));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a08dd', endColorstr='#3a9eff');
+  background: -o-linear-gradient(rgb(207,221,172),rgb(255,255,255));*/
+    
+  /*background: linear-gradient(63deg, #9a08dd, #3a9eff, #ff783a, #3ab8ff);color saturated wave like*/ 
+  /*background: linear-gradient(63deg, #e2d0ea, #b8d2ec, #f2d0c0, #cae5f3); faded colors more pleasing and less eye catchy*/ 
+    
+  background: linear-gradient(63deg, #e2d0ea, #b8d2ec, #f2d0c0, #cae5f3, #d8f2ae, #d5b2cc, #e9f092); 
+   
+  background-size: 300% 300%;
+  /*
+  -webkit-animation: WavyBackground 3s ease infinite;
+  -moz-animation: WavyBackground 3s ease infinite;
+  -o-animation: WavyBackground 3s ease infinite;
+  -z-animation: WavyBackground 3s linear infinite;*/
+  animation: WavyBackground 10s ease infinite;
+}
+/*
+@-webkit-keyframes WavyBackground {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+@-moz-keyframes WavyBackground {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+@-o-keyframes WavyBackground {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav bar */
+
+ nav ul {
+  position: fixed;
+  text-align: right;
+  width: 100%;
+  background-color: #Fff;
+  font-family: "comfortaa",sans-serif; 
+  font-size: 1.2em;
+  z-index: 100;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 2.5vh;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;  
+}
+nav ul li a:hover {
+  color: #ababab;
+}
+
+/* about me */
+
+#welcome-section {
+  line-height: 1.6;
+  /*background: #F5F5F5;*/
+  
+  
+  
+  /*background: linear-gradient(63deg, #e2d0ea, #b8d2ec, #f2d0c0, #cae5f3);
+  background-size: 800% 800%;
+
+  -webkit-animation: WavyBackground 21s ease infinite;
+  -moz-animation: WavyBackground 21s ease infinite;
+  -o-animation: WavyBackground 21s ease infinite;
+  animation: WavyBackground 21s ease infinite;
+  */
+  padding: 20vh 0;
+  text-align: center
+}
+
+#lab {
+  background: #F5F5F5;
+  line-height: 1.6;
+}
+
+#home {
+  background: #F5F5F5;
+  line-height: 1.6;
+}
+
+#cv {
+  background: #F5F5F5;
+  line-height: 1.6;
+}
+
+#contact {
+  line-height: 1.6;
+}
+
+
+
+
+/*
+ @-webkit-keyframes WavyBackground {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+@-moz-keyframes WavyBackground {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+@-o-keyframes WavyBackground {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+@keyframes WavyBackground {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+*/
+  
+  
+/* the projects section */
+
+.work {
+  padding-top: 5vh;
+  margin-top: -5vh;
+  padding-bottom: 5vh;
+  background-color: #dcdcdc;
+}
+
+.work .work-header {
+  margin-top: 5vh;
+  color: #111;
+  font-weight: normal;
+}
+
+.project {
+  box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+  background-color: #c4c4c4;
+  display: inline-block;
+  overflow: hidden;
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid #ababab;
+  border-radius: 5px;
+}
+
+.projet-blurbar {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  background-color: rgba(255,255,255, 0.4); /* White w/opacity/see-through */
+}
+
+.project-title {
+  color: #111;
+  
+  font-weight: bold;
+  padding-top: 6px;
+
+}
+.w3-margin{margin:16px!important}.w3-margin-top{margin-top:16px!important}.w3-margin-bottom{margin-bottom:16px!important}
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+
+
+
+.project-title:hover {
+  color: #939393;
+  
+}
+
+.show-all {
+  color: #111;
+  font-weight: bold;
+  background-color: #c4c4c4;
+  display: block;
+  width: 100px;
+  text-decoration: none;
+  padding: 20px;
+  border: 2px solid #ababab;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+.show-all:hover {
+  color: #111;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #c4c4c4;
+  text-align: center;
+  text-decoration: none;
+  width: 80px;
+  padding: 20px;
+  border: 2px solid #ababab;
+  border-radius: 100px;
+}
+
+/* contact */
+
+.contact {
+  background-color: #ababab;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  width = 100%;
+  line-height: 1.6;
+}
+
+.contact-details {
+  width = 10vw
+  height = 10vh
+  padding-left:2.5vw;
+  padding-right:2.5vw;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.underlayed-tag {
+  background-color: #000;
+  color:#fff;
+  display:inline-block;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center
+}
+
+.project-title-span {
+  background-color: rgba(0,0,0,1);
+  shadow: 5px 0 0 rgba(0,0,0,0.5), -5px 0 0 rgba(0,0,0,0.5);
+}
+
+
+.blurredBG {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  height: 20vw;
+  background-size: cover;
+  display: inline-block;
+  box-shadow: 0 0 8px #000;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  margin: 8px;
+}
+
+.blurredBG .parentBG {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 0 8px #000;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(100%);
+  transition: 0.2s;
+  opacity: 0;
+  background: inherit;
+}
+
+.blurredBG:hover .parentBG {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.blurredBG .content {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+}
+
+.blurredBG .bG {
+  position: absolute;
+  width: 40vw;
+  height: 20vw;
+  background-size: cover;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(4px);
+  background: inherit;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large !important;
+}
+
+span {
+  /*x-shadow: 5px 0 0 rgba(0,0,0,0.5), -5px 0 0 rgba(0,0,0,0.5);*/
+  text-decoration: none;
+}
+
+.pdfimage{
+    width: 60vw;
+    height: 84vw;
+}
+
+.embedpdf {
+    width: 80vw;
+    height: 100vh;
+}
+
+
+/* mobile section */
+
+@media screen and (max-width: 800px) {
+  nav ul {
+    display:none;
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
+  
+  .blurredBG {
+    width: 80vw;
+    height: 40vw;
+  }
+  .blurredBG .bG {
+    width: 80vw;
+    height: 40vw;
+  }
+  
+  .pdfimage{
+    width: 80vw;
+    height: 113vw;
+  }
+    
+  
+}
