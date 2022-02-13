@@ -11,41 +11,21 @@ html,
 body {
   font-family: 'comfortaa', sans-serif;
   text-align: center;
-  /*background: -moz-linear-gradient(top,  #9a08dd,  #fff);
-  background: -webkit-gradient(linear, left top, left bottom, from(#9a08dd), to(#3a9eff));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a08dd', endColorstr='#3a9eff');
-  background: -o-linear-gradient(rgb(207,221,172),rgb(255,255,255));*/
-    
-  /*background: linear-gradient(63deg, #9a08dd, #3a9eff, #ff783a, #3ab8ff);color saturated wave like*/ 
-  /*background: linear-gradient(63deg, #e2d0ea, #b8d2ec, #f2d0c0, #cae5f3); faded colors more pleasing and less eye catchy*/ 
-    
-  background: linear-gradient(63deg, #e2d0ea, #b8d2ec, #f2d0c0, #cae5f3, #d8f2ae, #d5b2cc, #e9f092); 
-   
-  background-size: 300% 300%;
-  /*
-  -webkit-animation: WavyBackground 3s ease infinite;
-  -moz-animation: WavyBackground 3s ease infinite;
-  -o-animation: WavyBackground 3s ease infinite;
-  -z-animation: WavyBackground 3s linear infinite;*/
-  animation: WavyBackground 10s ease infinite;
+	
+  /*THIS WWAS THE GRADIENT BACKGROUND BEFORE I PUT TESSELATION*/ 
+  /* background: linear-gradient(63deg, #e2d0ea, #b8d2ec, #f2d0c0, #cae5f3, #d8f2ae, #d5b2cc, #e9f092);  */
+  /* background-size: 300% 300%; */
+  /* animation: WavyBackground 10s ease infinite; */
+  
+  background: #F5F5F5; 
+  
 }
-/*
-@-webkit-keyframes WavyBackground {
-    0%{background-position:0% 66%}
-    50%{background-position:100% 35%}
-    100%{background-position:0% 66%}
-}
-@-moz-keyframes WavyBackground {
-    0%{background-position:0% 66%}
-    50%{background-position:100% 35%}
-    100%{background-position:0% 66%}
-}
-@-o-keyframes WavyBackground {
-    0%{background-position:0% 66%}
-    50%{background-position:100% 35%}
-    100%{background-position:0% 66%}
-}*/
 
+body {
+	width : 100%;
+	overflow-x : hidden;
+	overflow-y: scroll;
+}
 
 * {
   margin: 0;
@@ -54,14 +34,22 @@ body {
 
 /* Nav bar */
 
+nav {
+	margin-bottom : 7.5vh;
+}
+
  nav ul {
   position: fixed;
+  top : 0;
   text-align: right;
   width: 100%;
-  background-color: #Fff;
+  height : 7.5vh;
+  line-height: 2.5vh;
+  background-color: #ffffff;
   font-family: "comfortaa",sans-serif; 
   font-size: 1.2em;
   z-index: 100;
+  box-shadow:0 2px 8px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
 }
 
 nav ul li {
@@ -77,23 +65,12 @@ nav ul li a:hover {
   color: #ababab;
 }
 
-/* about me */
-
 #welcome-section {
+  position: relative ; 
+  width : 100vw;
+  height : 50vh;
   line-height: 1.6;
-  /*background: #F5F5F5;*/
-  
-  
-  
-  /*background: linear-gradient(63deg, #e2d0ea, #b8d2ec, #f2d0c0, #cae5f3);
-  background-size: 800% 800%;
-
-  -webkit-animation: WavyBackground 21s ease infinite;
-  -moz-animation: WavyBackground 21s ease infinite;
-  -o-animation: WavyBackground 21s ease infinite;
-  animation: WavyBackground 21s ease infinite;
-  */
-  padding: 20vh 0;
+  margin: 0 0 0 0;
   text-align: center
 }
 
@@ -116,33 +93,45 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
+.name_showoff {
+  display : inline-block;
+  text-align: center;
+  position : relative;
+  z-index: 2;
+  margin: auto;
+  height : 100%;
+
+  /* width : 100vw; */
+  /* left : 0vw; */
+   top : 18vh; 
+}
+
+.tesselation_bg {
+  position : absolute;
+  z-index: 1;
+  top : 0;
+  height : 50vh;
+  width : 100vw;
+  overflow: hidden;
+
+}
+
+#animated_background{
+	display : inline-block;
+	height : 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	/* position : absolute; */
+	/* top : 0; */
+	
+}
 
 
+#GFG {
+text-decoration: none;
+}
 
-/*
- @-webkit-keyframes WavyBackground {
-    0%{background-position:0% 66%}
-    50%{background-position:100% 35%}
-    100%{background-position:0% 66%}
-}
-@-moz-keyframes WavyBackground {
-    0%{background-position:0% 66%}
-    50%{background-position:100% 35%}
-    100%{background-position:0% 66%}
-}
-@-o-keyframes WavyBackground {
-    0%{background-position:0% 66%}
-    50%{background-position:100% 35%}
-    100%{background-position:0% 66%}
-}
-@keyframes WavyBackground {
-    0%{background-position:0% 66%}
-    50%{background-position:100% 35%}
-    100%{background-position:0% 66%}
-}
-*/
-  
-  
 /* the projects section */
 
 .work {
@@ -230,13 +219,13 @@ nav ul li a:hover {
   background-color: #ababab;
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
-  width = 100%;
+  width : 100%;
   line-height: 1.6;
 }
 
 .contact-details {
-  width = 10vw
-  height = 10vh
+  width : 10vw;
+  height: 10vh;
   padding-left:2.5vw;
   padding-right:2.5vw;
   display: inline-block;
@@ -307,6 +296,10 @@ nav ul li a:hover {
   background: inherit;
 }
 
+h1 {
+  font-size: 1.7em;
+}
+
 h3 {
   color: #fff;
   text-align: center;
@@ -327,6 +320,14 @@ span {
 .embedpdf {
     width: 80vw;
     height: 100vh;
+}
+
+svg g {
+  mix-blend-mode: lighten;
+}
+svg polygon {
+  stroke: none;
+  fill: white;
 }
 
 
@@ -357,6 +358,24 @@ span {
     width: 80vw;
     height: 113vw;
   }
-    
+  
+  .tesselation_bg {
+  height : 75vh;
+
+
+}
+
+#welcome-section {
+  position: relative ; 
+  width : 100vw;
+  height : 75vh;
+  line-height: 1.6;
+  margin: 0 0 5vh 0;
+
+}
+
+.name_showoff {
+   top : 5vh; 
+}
   
 }

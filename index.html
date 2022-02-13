@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-	
-
-	
 	<head>
 		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,6 +14,8 @@
 		
 		<title>PortFolio</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="./js/TweenMax.min.js"></script>
+		<script src="js/tesselation_jquery.min.js"></script>
 	</head>
 
 
@@ -29,16 +28,30 @@
       </ul>
     </nav>
 
-<style>
-  #GFG {
-    text-decoration: none;
-  }
-</style>
-
 <body>
   <div id="welcome-section" >
-    <h1><span class="underlayed-tag">Timothe Jost-Mousseau</span></h1>
-    <p>Mechanics, Electronics & Software for <span class="underlayed-tag" style="font-size: 2em">modern Neurosciences</span></p>
+
+	<div class = "tesselation_bg" >
+		<svg  id="animated_background" viewBox="0 0 1920 400" > <!--preserveAspectRatio="xMidYMid slice"  "xMidYMid meet">-->
+		  <defs>
+			<linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0.3" color-interpolation="sRGB">
+			  <stop id="stop1a" offset="0%" stop-color="#12a3b4"></stop>
+			  <stop id="stop1b" offset="100%" stop-color="#ff509e"></stop>
+			</linearGradient>
+			<linearGradient id="grad2" x1="0" y1="0" x2="1" y2="0" color-interpolation="sRGB">
+			  <stop id="stop2a" offset="0%" stop-color="#e3bc13"></stop>
+			  <stop id="stop2b" offset="100" stop-color="#00a78f"></stop>
+			</linearGradient>
+		  </defs>
+		  <rect id="rect1" x="0" y="0" width="1920" height="400" stroke="none" fill="url(#grad1)"></rect>
+		  <rect id="rect2" x="0" y="0" width="1920" height="400" stroke="none" fill="url(#grad2)"></rect>
+		</svg>
+	</div>
+	<div class = "name_showoff">
+		<span style="font-size: 30px"><h1><span class="underlayed-tag">Timothe Jost-Mousseau</span></h1>
+		Mechanics, Electronics & Software for <span class="underlayed-tag" style="font-size: 1em">modern Neurosciences</span></span>
+	</div>
+		
   </div>
 
 <div id="lab" class="work">
