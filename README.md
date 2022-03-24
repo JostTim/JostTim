@@ -6,7 +6,7 @@ More specific notes for me regarding all topics
 
 [![Tim's github stats](https://github-readme-stats.vercel.app/api?username=JostTim&show_icons=true)](https://github.com/JostTim/JostTim)
 
-<u>Fast links hub :</u>  
+<ins>Fast links hub :</ins>  
 [NeuroPsi - Shulz lab repos](https://github.com/ShulzLab)  
 [NeuroPsi - Maze setup](https://github.com/FreelyMovingSetup)  
 [NeuroPsi - Results analysis](https://github.com/FreelyMovingAnalysis)  
