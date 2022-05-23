@@ -10,11 +10,17 @@ I use a second-hand racked server with a hardware RAID card to host a family fil
 
 <img src="server.png" alt="IMG_20190223_163526" style="max-width:70%;" />
 
+
+
 This is a professional high-end server, with ethernet management port and interface, as well as built in hardware RAID card, and is made available at very low prices because it has been in use in server houses for 10 years already. Accessing such high end robust hardware for light home usage is both convenient, and ecologically interesting, as it allows to continue using a still fully functional machines instead of disposing it.
+
+![](main.assets/IMG_20220424_101622.jpg)
 
 
 
 The only issue with such professional equipment, comes from the fact that in data centers, the noise isn't an issue. In fact, server fans are "consumable" and are used at speeds that exceeds the real cooling needs, to prevent any failures. For the low computing power use that we make from this server at home, we don't need such noisy fans
+
+![IMG_20220424_100119](main.assets/IMG_20220424_100119.jpg)
 
 Unfortunately, the fan speed in relation to temperature is controlled by the motherboard and isn't parametrable from the network management port interface. Similarly, disconnecting the fan or using more "classic ones" with no feedback triggers automatic power off of the server, to prevent failures.
 
@@ -27,3 +33,17 @@ With an oscilloscope, I read the correspondence between the command PWM and the 
 I used this as a "conversion function", and made the arduino able to send a command to the fan with a modulation factor between feedback and command, depending on user input, while maintaining a "fake answer" to the motherboard, to keep the built-in fan security system in a "peaceful" state.
 
 By also reading of the actual answer of the fans with the arduino, I can detect if the fan turns to a complete stop, in case of a fatal failure for example, and in such a condition, update the fake answer to the motherboard to a flat signal, to trigger the soft power off of the server via the built-in fan speed security system.
+
+The finalized circuit is shown below
+
+![IMG_20220424_100647](main.assets/IMG_20220424_100647.jpg)
+
+![IMG_20220424_100836](main.assets/IMG_20220424_100836.jpg)
+
+![IMG_20220424_100432](main.assets/IMG_20220424_100432.jpg)
+
+![IMG_20220424_100234](main.assets/IMG_20220424_100234.jpg)
+
+![IMG_20220424_100225](main.assets/IMG_20220424_100225.jpg)
+
+![IMG_20220424_100148](main.assets/IMG_20220424_100148.jpg)
