@@ -4,7 +4,7 @@
 ### [Notes and logs](https://josttim.github.io/Klog/)
 More specific notes for me regarding all topics
 
-[![Tim's github stats](https://github-readme-stats.vercel.app/api?username=JostTim&show_icons=true)](https://github.com/JostTim/JostTim)
+[![Tim's github stats](https://github-readme-stats.vercel.app/api?username=JostTim&show_icons=true&include_all_commits=true)](https://github.com/JostTim/JostTim)
 
 <ins>Fast links hub :</ins>  
 [NeuroPsi - Shulz lab repos](https://github.com/ShulzLab)  
