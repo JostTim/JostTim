@@ -9,7 +9,7 @@ More specific notes for me regarding all topics
 [![Tim's github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=JostTim&layout=compact)](https://github.com/JostTim/JostTim)
 
 <ins>Fast links hub :</ins>  
-[Pasteur - Haiss lab repos](https://gitlab.pasteur.fr/haisslab)
+[Pasteur - Haiss lab repos](https://gitlab.pasteur.fr/haisslab)  
 [NeuroPsi - Shulz lab repos](https://github.com/ShulzLab)  
 [NeuroPsi - Maze setup](https://github.com/FreelyMovingSetup)  
 [NeuroPsi - Results analysis](https://github.com/FreelyMovingAnalysis)  
